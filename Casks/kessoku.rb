@@ -2,7 +2,7 @@
 cask "kessoku" do
   desc "A CLI tool for managing kessoku"
   homepage "https://github.com/mazrean/kessoku"
-  version "1.0.1"
+  version "1.1.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "kessoku" do
 
   on_macos do
     on_intel do
-      url "https://github.com/mazrean/kessoku/releases/download/v1.0.1/kessoku_Darwin_x86_64.tar.gz"
-      sha256 "237c482f62ea7f505278e0c33fcae156174ef011306f0a5384ac8b302d14f852"
+      url "https://github.com/mazrean/kessoku/releases/download/v1.1.0/kessoku_Darwin_x86_64.tar.gz"
+      sha256 "1e962bf14fa3d45f224452922aa11485e809b43edfd7f85615f030b64ea4a00c"
     end
     on_arm do
-      url "https://github.com/mazrean/kessoku/releases/download/v1.0.1/kessoku_Darwin_arm64.tar.gz"
-      sha256 "c97d485664ea19b69f7f4a62060441afeb28a92f74f7fb59adfc0f0b67054567"
+      url "https://github.com/mazrean/kessoku/releases/download/v1.1.0/kessoku_Darwin_arm64.tar.gz"
+      sha256 "b430bfc5409105503ef3898656bb0d8e02fa204a8ff101609b2a6e47d08232f9"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/mazrean/kessoku/releases/download/v1.0.1/kessoku_Linux_x86_64.tar.gz"
-      sha256 "d08faa104df4968d262701beb60adfff392d6917dc4dd01088d003cea050a2ee"
+      url "https://github.com/mazrean/kessoku/releases/download/v1.1.0/kessoku_Linux_x86_64.tar.gz"
+      sha256 "427d09f78de02d95534f88711c0c266cf5d44812ad10f72d1ea4b3cffdbae413"
     end
     on_arm do
-      url "https://github.com/mazrean/kessoku/releases/download/v1.0.1/kessoku_Linux_arm64.tar.gz"
-      sha256 "3b0b18b02cdf0ad011ef0d8f47eb13d99557491b20cdb71f3482aa589f54147f"
+      url "https://github.com/mazrean/kessoku/releases/download/v1.1.0/kessoku_Linux_arm64.tar.gz"
+      sha256 "398eb0faed4b8167dc14a4601fb7f5264877fc3ac9aa6f5399ebb57441116192"
     end
   end
 
