@@ -3,7 +3,7 @@ class Kanata < Formula
   homepage "https://github.com/mazrean/kanata"
   url "https://github.com/mazrean/kanata/releases/download/v0.1.0/kanata-v0.1.0-arm64-macos.tar.gz"
   version "0.1.0"
-  sha256 "e827612d2fbf14aba2f1185cd5a787c007db95748536e5b0918ee6e0043b6869"
+  sha256 "1b234abeb7d0ce2448d154a6b9ae9af9b9c082c05bff68e5766133f21877bbcf"
 
   # Requires macOS 26 (Tahoe) or later
   depends_on macos: :tahoe
@@ -13,10 +13,11 @@ class Kanata < Formula
     odie "kanata requires Apple Silicon. It does not run on Intel Macs." unless Hardware::CPU.arm?
 
     # Install binary and SwiftPM resource bundle to bin/
-    # bin.install creates symlinks in the Homebrew prefix so that
-    # Bundle.main.bundleURL (which returns the symlink directory) can find the bundle.
     bin.install "bin/kanata"
     bin.install "bin/kanata_ControlPlane.bundle"
+    # Homebrew does not auto-link directories in bin/, but Bundle.main.bundleURL
+    # returns the symlink directory (/opt/homebrew/bin/), so we link it manually.
+    ln_s bin/"kanata_ControlPlane.bundle", HOMEBREW_PREFIX/"bin/kanata_ControlPlane.bundle"
 
     # Place runtime dependencies under share/kanata/
     # Tarball layout (ADR §Decision-1): vm.entitlements is bundled as share/kanata/vm.entitlements
