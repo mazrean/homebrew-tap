@@ -4,21 +4,21 @@ cask "odjson" do
 
   on_macos do
     on_arm do
-      sha256 "401857b72b1895cd95aa8568bc60264562826ca603da24fdf05eaf612d4558e9"
+      sha256 "8e797d4102a73707cd2107ff77cf37304c536f6caafbe7ec9881e72b1c811817"
       url "https://github.com/mazrean/odjson/releases/download/v#{version}/odjson_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "c0483aafeb9427efc5a9aca80d7f9babdf23a7b63cb603cd0e2242cd521c4a24"
+      sha256 "b302b2a837d5b64ba1254c7a70ca90e1e56c78a2f1e809bcca4d11cd573d9765"
       url "https://github.com/mazrean/odjson/releases/download/v#{version}/odjson_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "e136c6ace7e34a945d2930bcbf163f678409f717ffabefa75d53bc3461b6bd4b"
+      sha256 "30023011b006a7bf4ee24ea11ed890ac1da1f1878a513276d871bdd44a5c3ef9"
       url "https://github.com/mazrean/odjson/releases/download/v#{version}/odjson_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "e165b25b45bc38724e848bbcbda8a03306cafde3e6ed344dc2f4be6ae6a246ea"
+      sha256 "d05ac7bf8de1cca0398b149f5080d46e4de33f4fb965e08b10a51d201733a4da"
       url "https://github.com/mazrean/odjson/releases/download/v#{version}/odjson_#{version}_linux_amd64.tar.gz"
     end
   end
